@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import './users.css'
 
 function Users() {
+  const move = useNavigate();
   let [data, setData] = useState([]);
   useEffect(() => {
     let a = fetch("https://jsonplaceholder.typicode.com/users");
@@ -13,8 +15,11 @@ function Users() {
       setData(d);
     });
   }, []);
-  function f1(x){
-    window.confirm(`name is `+x)
+  function f1(x,id){
+    window.confirm(`do you wanna see details?`+x)
+    if(x){
+      move(`/mainpage/userlogin/${id}`)
+    }
   }
   return (
    <>
@@ -30,7 +35,7 @@ function Users() {
           <h4>username: {ele.username}</h4>
           <center><button onClick={()=>
             {
-                f1(ele.name)
+                f1(ele.name,ele.id)
             }
           }>Click HERE</button></center>
         </div>

@@ -1,0 +1,89 @@
+#user-details-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.12), 
+              0 2px 8px rgba(16, 185, 129, 0.06);
+}
+
+#user-title {
+  font-size: 2rem;
+  color: #065f46;
+  font-weight: 700;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+  border-bottom: 2px solid rgba(16, 185, 129, 0.2);
+  padding-bottom: 15px;
+}
+
+#user-name,
+#user-username,
+#user-email,
+#user-phone,
+#user-website {
+  font-size: 1rem;
+  color: #1f2937;
+  line-height: 1.8;
+  margin: 10px 0;
+  padding-left: 12px;
+}
+
+#user-name strong,
+#user-username strong,
+#user-email strong,
+#user-phone strong,
+#user-website strong {
+  color: #065f46;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+#address-title,
+#company-title {
+  font-size: 1.3rem;
+  color: #047857;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-left: 12px;
+  border-left: 3px solid #10b981;
+}
+
+#address-suite,
+#address-street,
+#address-city,
+#address-zipcode,
+#company-name,
+#company-catchphrase,
+#company-bs {
+  font-size: 1rem;
+  color: #1f2937;
+  line-height: 1.8;
+  margin: 10px 0;
+  padding-left: 12px;
+}
+
+#company-name strong {
+  color: #065f46;
+  font-weight: 600;
+}
+
+#user-website a {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  border-bottom: 1px solid transparent;
+}
+
+#user-website a:hover {
+  color: #059669;
+  border-bottom-color: #059669;
+}
